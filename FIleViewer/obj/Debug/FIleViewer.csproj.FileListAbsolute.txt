@@ -1,0 +1,13 @@
+C:\Temp\FIleViewer\FIleViewer\bin\Debug\FIleViewer.exe
+C:\Temp\FIleViewer\FIleViewer\bin\Debug\FIleViewer.pdb
+C:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.Properties.Resources.resources
+C:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.FilesUserControl.resources
+C:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.csproj.GenerateResource.Cache
+C:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.exe.licenses
+C:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.exe
+C:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.pdb
+c:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.View.FileDetailsUserControl.resources
+c:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.csprojResolveAssemblyReference.cache
+c:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.View.SearchControl.resources
+c:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.View.FileContentUserControl.resources
+c:\Temp\FIleViewer\FIleViewer\obj\Debug\FIleViewer.FileViewerForm.resources
