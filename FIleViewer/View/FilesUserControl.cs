@@ -26,6 +26,7 @@ namespace FIleViewer {
             fluentApi.WithEvent<GridControl, EventArgs>(filesGridControl, "DoubleClick").SetBinding<string>(f => f.SelectedFilePath, args => filesGridView.GetFocusedDisplayText(), (grid, str) => (grid.MainView as GridView).FocusedRowHandle = (grid.MainView as GridView).FindRow(str));
             fluentApi.WithEvent<ColumnView, FocusedRowObjectChangedEventArgs>(filesGridView, "FocusedRowObjectChanged").SetBinding<string>(f => f.FocusedFilePath, args => args.Row == null ? null : args.Row.ToString(), (view, str) => view.FocusedRowHandle = view.FindRow(str));
             mvvmContext1.RegisterService(new FileSearchService());
+            MVVMContext.RegisterXtraDialogService();
             fluentApi.BindCommand<FilesUserControl>(searchButton, (f, us) => f.Search(us), p => this) ;
             tokenEdit1.Properties.Tokens.AddRange(mvvmContext1.GetViewModel<FilesViewModel>().FilterPatterns.Select<string, TokenEditToken>(f => new TokenEditToken(f)).ToList());
             fluentApi.SetBinding(tokenEdit1, fi => fi.EditValue, f => f.CurrentFilterPattern);

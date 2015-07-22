@@ -23,9 +23,10 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchControl));
             this.searchTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext();
+            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.prevButton = new DevExpress.XtraEditors.SimpleButton();
             this.nextButton = new DevExpress.XtraEditors.SimpleButton();
             this.closeButton = new DevExpress.XtraEditors.SimpleButton();
@@ -67,6 +68,7 @@
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(26, 23);
             this.closeButton.TabIndex = 3;
+            this.closeButton.Visible = false;
             // 
             // SearchControl
             // 

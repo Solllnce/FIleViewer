@@ -23,6 +23,14 @@ namespace FIleViewer.ViewModel {
         public void StopSearch() {
             Messenger.Default.Send<SearchMessage>(new SearchMessage() { Type = SearchMessage.SearchMessageType.Stop });
         }
+        protected bool CanGoNext()
+        {
+            return !string.IsNullOrEmpty(SearchString);
+        }
+        protected bool CanGoPrev()
+        {
+            return !string.IsNullOrEmpty(SearchString);
+        }
     }
 
     public class SearchMessage {

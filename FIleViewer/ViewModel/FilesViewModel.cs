@@ -28,6 +28,10 @@ namespace FIleViewer {
         public virtual ISearchService Service {
             get { throw new NotImplementedException(); }
         }
+        public virtual IDialogService DialogService
+        {
+            get { throw new NotImplementedException(); }
+        }
         public void RegisterSearchMessenger() {
             Messenger.Default.Register<SearchMessage>(this, OnSearchMessage);
         }
@@ -67,14 +71,16 @@ namespace FIleViewer {
             return Directory.Exists(CurrentDirectory);
         }
         public void Search(object owner) {
-            Service.StartSearch(owner);
+            //Service.StartSearch(owner);
+            DialogService.ShowDialog(MessageButton.OK, "Search Window", "Search", this);
+            StopSearch();
         }
         protected bool CanSearch(object owner) {
             return Files != null && owner != null && CanLoad();
         }
         public void StopSearch() {
             SearchString = string.Empty;
-            Service.StopSearch();
+            //Service.StopSearch();
         }
         public void Filter() {
             var filteredList = Directory.GetFiles(CurrentDirectory).Where(f => CurrentFilterPattern.Contains(Path.GetExtension(f).TrimStart('.')));

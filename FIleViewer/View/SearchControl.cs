@@ -12,6 +12,7 @@ using FIleViewer.ViewModel;
 using FIleViewer.Service;
 
 namespace FIleViewer.View {
+    [DevExpress.Utils.MVVM.UI.ViewType("Search")]
     public partial class SearchControl : DevExpress.XtraEditors.XtraUserControl {
         public SearchControl() {
             InitializeComponent();
